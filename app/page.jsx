@@ -1,3 +1,4 @@
+import AddProductForm from '@/components/AddProductForm'
 import { Button } from '@/components/ui/button'
 import { Bell, LogIn, Rabbit, Shield } from 'lucide-react'
 import Image from 'next/image'
@@ -60,6 +61,9 @@ const Home = () => {
             Track prices from any e-commerce site. Get instant alerts when prices
             drop. Save money effortlessly.
           </p>
+
+          {/* Product Form */}
+          <AddProductForm user={user}/>
 
           {products.length === 0 && (
             <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-16">
