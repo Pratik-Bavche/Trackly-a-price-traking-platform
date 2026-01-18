@@ -1,4 +1,5 @@
 import AddProductForm from '@/components/AddProductForm'
+import AuthButton from '@/components/AuthButton'
 import { Button } from '@/components/ui/button'
 import { Bell, LogIn, Rabbit, Shield } from 'lucide-react'
 import Image from 'next/image'
@@ -42,13 +43,7 @@ const Home = () => {
             />
           </div>
 
-          <Button
-            variant="default"
-            size="sm"
-            className="bg-orange-500 hover:bg-orange-600 gap-2 cursor-pointer"
-          >
-            <LogIn /> Sign In
-          </Button>
+          <AuthButton user={user}/>
         </div>
       </header>
 
